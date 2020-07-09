@@ -11,4 +11,5 @@ hostname = duckduckgo.com
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
 ^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ url 302 https://dict.youdao.com/search?q=$1
 ^https:\/\/duckduckgo.com\/\?q=gg\+([^&]+).+ url 302 https://www.google.com/search?q=$1
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://m.sm.cn/s?q=$1
