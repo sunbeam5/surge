@@ -1,4 +1,4 @@
-hostname = *.bjxkhc.com,biz.caiyunapp.com,*.rr.tv,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,amdc.m.taobao.com,api.m.jd.com,*.zhihu.com,mp.weixin.qq.com,vsco.co,api.bilibili.com,app.bilibili.com,*.amemv.com,*.snssdk.com,api.mvmtv.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,*.musical.ly,account.wps.cn,account.wps.com,license.pdfexpert.com,api.interpreter.caiyunai.com,mobile-api.adguard.com,api.unfold.app,license.enpass.io,api-production.endel.io,ap*.intsig.net,raw.githubusercontent.com,*.github.io
+hostname = *.bjxkhc.com,biz.caiyunapp.com,*.rr.tv,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,amdc.m.taobao.com,api.m.jd.com,*.zhihu.com,mp.weixin.qq.com,vsco.co,api.bilibili.com,app.bilibili.com,*.amemv.com,*.snssdk.com,api.mvmtv.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,*.musical.ly,account.wps.cn,account.wps.com,license.pdfexpert.com,api.interpreter.caiyunai.com,mobile-api.adguard.com,api.unfold.app,license.enpass.io,api-production.endel.io,ap*.intsig.net,raw.githubusercontent.com,*.github.io,www.zhihu.com,zhuanlan.zhihu.com,aweme.snssdk.com,
 
 ^https\:\/\/hjapi\.bjxkhc\.com\/v2d2\/users\/.*\/member url script-response-body eval_script.js
 
@@ -53,3 +53,7 @@ hostname = *.bjxkhc.com,biz.caiyunapp.com,*.rr.tv,api.weibo.cn,mapi.weibo.com,*.
 ^https:\/\/api-production\.endel\.io\/.*\/user$ url script-response-body eval_script.js
 
 ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body eval_script.js
+
+^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header eval_script.js
+
+^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body eval_script.js
