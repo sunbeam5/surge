@@ -1,7 +1,7 @@
 #!name=eval_script.js module
 
 [MITM]
-hostname = %INSERT% *.bjxkhc.com,biz.caiyunapp.com,*.rr.tv,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,amdc.m.taobao.com,api.m.jd.com,*.zhihu.com,mp.weixin.qq.com,vsco.co,api.bilibili.com,app.bilibili.com,*.amemv.com,*.snssdk.com,api.mvmtv.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,*.musical.ly,account.wps.cn,account.wps.com,license.pdfexpert.com,api.interpreter.caiyunai.com,mobile-api.adguard.com,api.unfold.app,license.enpass.io,api-production.endel.io,ap*.intsig.net,raw.githubusercontent.com,*.github.io,www.zhihu.com,zhuanlan.zhihu.com,aweme.snssdk.com,
+hostname = %INSERT% *.bjxkhc.com,biz.caiyunapp.com,*.rr.tv,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,amdc.m.taobao.com,api.m.jd.com,*.zhihu.com,mp.weixin.qq.com,vsco.co,api.bilibili.com,app.bilibili.com,*.amemv.com,*.snssdk.com,api.mvmtv.com,aweme*.snssdk.com,*.kuwo.cn,*.xiaoxiao*.com,api*.tiktokv.com,*.musical.ly,account.wps.cn,account.wps.com,license.pdfexpert.com,api.interpreter.caiyunai.com,mobile-api.adguard.com,api.unfold.app,license.enpass.io,api-production.endel.io,ap*.intsig.net,raw.githubusercontent.com,*.github.io
 
 [Script]
 eval_script.js = type=http-response,requires-body=1,pattern=^https\:\/\/hjapi\.bjxkhc\.com\/v2d2\/users\/.*\/member,script-path=eval_script.js
@@ -57,7 +57,3 @@ eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/license\.
 eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/api-production\.endel\.io\/.*\/user$,script-path=eval_script.js
 
 eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,script-path=eval_script.js
-
-eval_script.js = type=http-request,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=eval_script.js
-
-eval_script.js = type=http-response,requires-body=1,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=eval_script.js
