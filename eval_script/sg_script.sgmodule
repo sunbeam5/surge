@@ -38,13 +38,9 @@ eval_script.js = type=http-response,requires-body=1,pattern=^https://aweme-eagle
 
 eval_script.js = type=http-response,requires-body=1,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),script-path=eval_script.js
 
-eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/.*\.xiaoxiao.*\.com\/(vod\/reqplay\/|ucp/index|getGlobalData),script-path=eval_script.js
-
 eval_script.js = type=http-response,requires-body=1,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,script-path=eval_script.js
 
 eval_script.js = type=http-response,requires-body=1,pattern=^https://account.wps.*/api/users/,script-path=eval_script.js
-
-eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*),script-path=eval_script.js
 
 eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-path=eval_script.js
 
@@ -57,9 +53,3 @@ eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/license\.
 eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/api-production\.endel\.io\/.*\/user$,script-path=eval_script.js
 
 eval_script.js = type=http-response,requires-body=1,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,script-path=eval_script.js
-
-eval_script.js = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),script-path=eval_script.js
-
-eval_script.js = type=http-response,requires-body=1,pattern=^http://amdc\.m\.taobao\.com/amdc/mobileDispatch,script-path=eval_script.js
-
-eval_script.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=eval_script.js
